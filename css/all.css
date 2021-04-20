@@ -1,0 +1,234 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+  v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* start */
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: row;
+}
+
+.left {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  z-index: 3;
+}
+
+.header {  
+  width: 400px;
+  height: 150px;
+  background-color: #73C0D8;
+  position: sticky;
+  top: 0;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 36px;
+  color: #FFFFFF;
+  padding-top: 30px;
+  padding-left: 30px;
+}
+
+.header-text {
+  padding-top: 20px;
+  padding-right: 20px;
+}
+
+.date {
+  color: #FFFFFF;
+  text-align: end;
+  padding-bottom: 10px;
+}
+
+.odd, .even {
+  color: #FFFFFF;
+  font-size: 14px;
+}
+
+.odd>span, .even>span {
+  color: yellow;
+  font-size: 24px;
+  font-weight: bolder;
+}
+
+.odd, .even, .other {
+  display: none;
+}
+
+.header-select {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.header-select>select {
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.content {
+  background-color:white;
+}
+
+.list>li {
+  padding: 20px;
+  border-bottom: 1px solid gray;
+}
+
+.list>li>h2 {
+  padding-bottom: 20px;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.list>li>p {
+  padding-bottom: 20px;
+  color: #666666;
+}
+
+.mask {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mask>h3>span {
+  font-size: 24px;
+}
+
+.adult {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 150px;
+  background-color: #73C0D8;
+  color: white;
+  font-weight: bolder;
+  text-align: center;
+  line-height: 100%;
+  padding: 10px 0px;
+  border-radius: 30px;
+}
+
+.child {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 150px;
+  background-color: #FFA573;
+  color: white;
+  font-weight: bolder;
+  text-align: center;
+  padding: 10px 0px;
+  border-radius: 30px;
+}
+
+.goLoc{
+  display: flex;
+  align-items: center;
+  background-color: red;
+  color: white;
+  font-weight: bolder;
+  text-align: center;
+  padding: 10px 10px;  
+  border-radius: 50px;
+  text-decoration: none;
+}
+
+#map {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+.marker-cluster-small {
+  background-color: rgba(181, 226, 140, 0.6);
+}
+
+.marker-cluster-small div {
+  background-color: rgba(110, 204, 57, 0.6);
+}
+
+.marker-cluster-medium {
+  background-color: rgba(241, 211, 87, 0.6);
+}
+
+.marker-cluster-medium div {
+  background-color: rgba(240, 194, 12, 0.6);
+}
+
+.marker-cluster-large {
+  background-color: rgba(253, 156, 115, 0.6);
+}
+
+.marker-cluster-large div {
+  background-color: rgba(241, 128, 23, 0.6);
+}
+
+.marker-cluster {
+  background-clip: padding-box;
+  border-radius: 20px;
+}
+
+.marker-cluster div {
+  width: 30px;
+  height: 30px;
+  margin-left: 5px;
+  margin-top: 5px;
+  text-align: center;
+  border-radius: 15px;
+  font: 12px "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+.marker-cluster span {
+  line-height: 30px;
+}
